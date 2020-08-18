@@ -7,9 +7,9 @@ import { auth } from "../../firebase/firebase.utils";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
-import { selectCurrentUser } from "../../redux/user/user.selector";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 
-import { ReactComponent as Logo } from "../../assest/crown.svg";
+import { ReactComponent as Logo } from "../../assets/crown.svg";
 
 import "./header.styles.scss";
 
@@ -22,7 +22,7 @@ const Header = ({ currentUser, hidden }) => (
       <Link className="option" to="/shop">
         SHOP
       </Link>
-      <Link className="option" to="/contact">
+      <Link className="option" to="/shop">
         CONTACT
       </Link>
       {currentUser ? (
